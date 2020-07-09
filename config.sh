@@ -96,6 +96,11 @@ case "$1" in
 	echo TARGET_NAME=onyx  >> .tmp-config &&
 	repo_sync $1
 	;;
+"onyx")
+echo PRODUCT_NAME=b2g_osprey  >> .tmp-config &&
+echo TARGET_NAME=osprey  >> .tmp-config &&
+repo_sync $1
+;;
 *)
 	echo "Usage: $0 [-cdflnq] [-j <jobs>] [--force-sync] (device name)"
 	echo "Flags are passed through to |./repo sync|."
@@ -105,6 +110,7 @@ case "$1" in
 	echo - emulator-10-x86_64
 	echo - sargo (Google Pixel 3a)
 	echo - onyx  (OnePlus X)
+	echo - osprey  (Motorola Moto G3)
 	exit -1
 	;;
 esac
