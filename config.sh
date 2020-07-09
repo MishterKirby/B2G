@@ -108,7 +108,7 @@ repo_sync $1
 	echo Valid devices to configure are:
 	echo - emulator-10-arm
 	echo - emulator-10-x86_64
-	echo - sargo (Google Pixel 3a)
+	echo - sargo  (Google Pixel 3a)
 	echo - onyx  (OnePlus X)
 	echo - osprey  (Motorola Moto G3)
 	exit -1
